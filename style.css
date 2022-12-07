@@ -61,45 +61,55 @@ body {
   line-height: 2.3rem;
   margin-bottom: 1rem;
 }
-.desc::after{
-    content: "";
-    -webkit-mask-image: linear-gradient(1deg, rgb(72 72 72 / 66%), #06060600);
-    mask-image: linear-gradient(0deg, rgb(47, 44, 49), transparent);
-    background: url("./wave.svg");
-    object-fit: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: -240px;
-    left: 0px;
-    width: 100%;
-    height: 32rem;
+.desc::after {
+  content: "";
+  -webkit-mask-image: linear-gradient(1deg, rgb(72 72 72 / 66%), #06060600);
+  mask-image: linear-gradient(0deg, rgb(47, 44, 49), transparent);
+  background: url("./wave.svg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -240px;
+  left: 0px;
+  width: 100%;
+  height: 32rem;
 }
-.card_text > img{
-    width: 45%;
-    height: 100%;
-    object-fit: cover;
-    -webkit-mask-image: url("./blob.svg");
-    mask-image: url("./blob.svg");
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    mask-position: center;
+.card_text > img {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: url("./blob.svg");
+  mask-image: url("./blob.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
 }
-.card_text > p{
-    width: 50%;
-    line-height: 2.4rem;
-    font-size: 1.3rem;
-    color: rgb(167, 167, 167);
+.card_text > p {
+  width: 50%;
+  line-height: 2.4rem;
+  font-size: 1.3rem;
+  color: rgb(167, 167, 167);
 }
-.card_text{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 3rem;
-    margin-bottom: 1rem;
+.card_text {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+.blob_animation {
+  width: 100%;
+  height: 30rem;
+}
+
+.blob_animation > svg {
+  width: 100%;
+  height: 100%;
+  transition: all 200ms;
 }
