@@ -1,0 +1,101 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(24, 14, 26);
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem 0px;
+  position: relative;
+}
+.container > h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  color: rgb(29, 12, 39);
+  text-shadow: 0px 0px 12px rgb(207, 207, 207), 0px 0px 16px rgb(92, 92, 92);
+}
+.container > p {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  z-index: 1;
+  color: rgb(48, 0, 45);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.4);
+  word-spacing: 0px;
+  line-height: 2.5rem;
+}
+.container > img {
+  position: absolute;
+  top: 0px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(180deg, rgb(47, 44, 49), transparent);
+  mask-image: linear-gradient(180deg, rgb(47, 44, 49), transparent);
+}
+.desc {
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+  color: rgb(167, 167, 167);
+  margin-bottom: 9rem;
+}
+.desc > p {
+  font-size: 1.3rem;
+  text-align: justify;
+  text-transform: capitalize;
+  line-height: 2.3rem;
+}
+.desc::after{
+    content: "";
+    -webkit-mask-image: linear-gradient(1deg, rgb(72 72 72 / 66%), #06060600);
+    mask-image: linear-gradient(0deg, rgb(47, 44, 49), transparent);
+    background: url("./divider.svg");
+    object-fit: cover;
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -289px;
+    left: 0px;
+    width: 100%;
+    height: 32rem;
+}
+.card_text > img{
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: url("./blob.svg");
+    mask-image: url("./blob.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+.card_text > p{
+    width: 50%;
+    line-height: 2.4rem;
+    font-size: 1.3rem;
+    color: rgb(167, 167, 167);
+}
+.card_text{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
